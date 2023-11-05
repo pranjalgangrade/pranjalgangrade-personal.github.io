@@ -1,22 +1,24 @@
 <html>
 <script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-			embeddedservice_bootstrap.init(
-				'00D3I0000000jPN',
-				'Chat_for_Desktop',
-				'https://specialized--msg2.sandbox.my.site.com/ESWChatforDesktop1699084871177',
-				{
-					scrt2URL: 'https://specialized--msg2.sandbox.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
+        function initEmbeddedMessaging() {
+            try {
+                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+    
+                embeddedservice_bootstrap.init(
+                    '00D3I0000000jPN',
+                    'Enhanced_Bot1',
+                    'https://specialized--msg2.sandbox.my.site.com/ESWEnhancedBot11699191018811',
+                    {
+                        scrt2URL: 'https://specialized--msg2.sandbox.my.salesforce-scrt.com'
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://specialized--msg2.sandbox.my.site.com/ESWEnhancedBot11699191018811/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    
 <script type='text/javascript' src='https://specialized--msg2.sandbox.my.site.com/ESWChatforDesktop1699084871177/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 <body> Enhanced Bot </body>
 </html>
